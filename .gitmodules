@@ -1,0 +1,3 @@
+[submodule "backend-app/db/docker-mysql"]
+	path = backend-app/db/docker-mysql
+	url = https://github.com/shinyay/docker-mysql.git
