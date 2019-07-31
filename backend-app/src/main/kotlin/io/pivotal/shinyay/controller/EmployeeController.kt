@@ -11,6 +11,6 @@ class EmployeeController(val employeeRepository: EmployeeRepository) {
     @GetMapping(value = ["/employees", "/"])
     fun employees(): MutableIterable<Employee> = employeeRepository.findAll()
 
-    @PostMapping(value = "/employees")
+    @PostMapping(value = "/employee")
     fun addEmployee(@RequestBody val employee: Employee) = employeeRepository.save(employee)
 }
