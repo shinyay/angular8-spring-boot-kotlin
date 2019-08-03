@@ -1,1 +1,17 @@
-<p>employee works!</p>
+<div class="col-md-6">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.name}}</td>
+                <td>{{employee.role}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
