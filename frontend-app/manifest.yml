@@ -1,0 +1,11 @@
+---
+applications:
+- name: frontend-service
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  buildpack: staticfile_buildpack
+  routes:
+  - route: frontend-service-demo.cfapps.io
+  stack: cflinuxfs3
+  path: ./dist/frontend-app
