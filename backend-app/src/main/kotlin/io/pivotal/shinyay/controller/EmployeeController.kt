@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @CrossOrigin(origins = ["*"], allowedHeaders = ["*"])
+@RequestMapping(value = ["/employees", "/"])
 class EmployeeController(val employeeRepository: EmployeeRepository) {
 
-    @GetMapping(value = ["/employees", "/"])
+    @GetMapping(produces = ["application/json"])
     fun employees(): MutableIterable<Employee> = employeeRepository.findAll()
 
-    @PostMapping(value = ["/employee"])
+    @PostMapping
     fun addEmployee(@RequestBody employee: Employee) = employeeRepository.save(employee)
 }
