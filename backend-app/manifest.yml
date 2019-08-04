@@ -1,6 +1,11 @@
----
 applications:
 - name: backend-service
-  memory: 768M
-  random-route: true
   path: build/libs/backend-app-0.0.1-SNAPSHOT.jar
+  disk_quota: 1G
+  instances: 1
+  memory: 768M
+  routes:
+  - route: backend-service-demo.cfapps.io
+  services:
+  - my-db
+  stack: cflinuxfs3
