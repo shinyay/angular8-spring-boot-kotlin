@@ -10,6 +10,7 @@
             <tr *ngFor="let employee of employees">
                 <td>{{employee.name}}</td>
                 <td>{{employee.role}}</td>
+                <td><button class="btn btn-danger" (click)="deleteEmployee(employee)"> Delete Employee</button></td>
             </tr>
         </tbody>
     </table>
