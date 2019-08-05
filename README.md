@@ -1,6 +1,6 @@
-# Anguler CLI on Docker
+# Angular 8 Frontend for SpringBoot Backedn
 
-Containerized Angular CLI 
+App to App on PCF
 
 ## Description
 
@@ -10,8 +10,15 @@ Containerized Angular CLI
 
 ## Features
 
-- feature:1
-- feature:2
+### Tags
+
+- for-local-without-css
+  - Frontend with Local Address and Port for Local SpringBoot
+  - MySQL in Docker Container
+- for-pws-without-css
+  - Frontend with PWS Domain for SpringBoot on PWS
+- for-pws-with-css
+  - Frontend with Bootstrap with PWS Domain for SpringBoot on PWS
 
 ## Requirement
 
