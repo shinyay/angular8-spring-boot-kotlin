@@ -27,4 +27,9 @@ export class HttpClientService {
 
   public deleteEmployee(employee) {
     return this.httpClient.delete<Employee>('http://localhost:8080/employees/' + employee.id);
+  }
+
+  public createEmployee(employee) {
+    return this.httpClient.post<Employee>('http://localhost:8080/employees', employee)
+  }
 }
