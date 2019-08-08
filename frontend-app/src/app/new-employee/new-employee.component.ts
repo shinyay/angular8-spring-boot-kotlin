@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClientService, Employee } from '../service/http-client.service';
 
 @Component({
   selector: 'app-new-employee',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewEmployeeComponent implements OnInit {
 
-  constructor() { }
+
+  employee: Employee = new Employee(0, "", "", 0)
+
+  constructor(
+    private httpClientService: HttpClientService
+  ) { }
 
   ngOnInit() {
   }
 
+  createEmployee(): void {
+    this.httpClientService.createEmployee(this.employee).subscribe(data => {
+      alert("Employee created successfully.");
+    })
+  }
 }
