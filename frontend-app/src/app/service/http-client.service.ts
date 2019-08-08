@@ -28,7 +28,7 @@ export class HttpClientService {
   public deleteEmployee(employee) {
     return this.httpClient.delete<Employee>(environment.apiUrl + '/' + employee.id);
   }
-  
+
   public createEmployee(employee) {
     return this.httpClient.post<Employee>(environment.apiUrl, employee);
   }
