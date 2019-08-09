@@ -7,12 +7,16 @@ import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NewEmployeeComponent } from './new-employee/new-employee.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
-    NewEmployeeComponent
+    NewEmployeeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
