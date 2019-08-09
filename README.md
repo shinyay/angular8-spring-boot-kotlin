@@ -47,11 +47,18 @@ $ docker run --rm -it -v (pwd):/app shinyay/angular-cli npm audit
 $ docker run --rm -it -v (pwd):/app -p 4200:4200 shinyay/angular-cli ng serve --host 0.0.0.0 --poll=2000
 ```
 
-### Create Component
+### Create Components / Services
 #### Employee Component
 ```
 $ ng generate component employee
 ```
+
+#### HttpClient Service
+```
+$ ng generate service service/httpClient
+```
+
+##### New Employee Component
 
 ## Installation
 
