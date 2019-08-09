@@ -59,6 +59,9 @@ $ ng generate service service/httpClient
 ```
 
 ##### New Employee Component
+```
+$ ng generate component new-employee
+```
 
 ## Installation
 
