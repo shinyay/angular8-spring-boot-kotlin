@@ -63,6 +63,16 @@ $ ng generate service service/httpClient
 $ ng generate component new-employee
 ```
 
+##### Header Component
+```
+$ ng generate component header
+```
+
+##### Footer Component
+```
+$ ng generate component footer
+```
+
 ## Installation
 
 ## Licence
