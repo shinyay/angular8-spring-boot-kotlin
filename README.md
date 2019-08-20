@@ -80,6 +80,15 @@ $ ng generate component footer
 $ ng generate service service/authentication
 ```
 
+#### Login Component
+```
+$ ./angular-cli.fish --directory frontend-app ng generate component login
+```
+or
+```
+$ ng generate component login
+```
+
 
 ## Installation
 
