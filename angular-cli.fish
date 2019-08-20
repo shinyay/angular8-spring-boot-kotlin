@@ -6,6 +6,7 @@ function run_docker
 
   if set -lq _flag_help
     echo "angular-cli.fish <COMMAND>"
+    echo "angular-cli.fish -d/--directory <ENTRY DIRECTORY>"
     return
   end
 
