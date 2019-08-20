@@ -75,6 +75,12 @@ $ ng generate component header
 $ ng generate component footer
 ```
 
+#### Authentication Service
+```
+$ ng generate service service/authentication
+```
+
+
 ## Installation
 
 ## Licence
