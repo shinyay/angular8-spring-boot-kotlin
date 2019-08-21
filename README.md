@@ -89,7 +89,7 @@ or
 $ ng generate component login
 ```
 
-#### Login Component
+#### Logout Component
 ```
 $ ./angular-cli.fish --directory frontend-app ng generate component logout
 ```
