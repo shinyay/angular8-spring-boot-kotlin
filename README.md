@@ -89,6 +89,14 @@ or
 $ ng generate component login
 ```
 
+#### Login Component
+```
+$ ./angular-cli.fish --directory frontend-app ng generate component logout
+```
+or
+```
+$ ng generate component logout
+```
 
 ## Installation
 
