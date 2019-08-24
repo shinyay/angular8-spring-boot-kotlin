@@ -14,6 +14,13 @@ $ cd backend-app/db/docker-mysql
 $ docker-compose up -d
 ```
 
+### 2. Run Backend Service
+```
+$ cd backend-app
+$ ./gradlew clean bootRun
+```
+
+
 ## Features
 
 ### Tags
