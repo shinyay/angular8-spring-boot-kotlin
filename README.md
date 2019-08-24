@@ -115,6 +115,15 @@ or
 $ ng generate component logout
 ```
 
+#### AuthGuard Service
+```
+$ ./angular-cli.fish --directory frontend-app ng generate service service/authGuard
+```
+or
+```
+$ ng generate service service/authGuard
+```
+
 ## Installation
 
 ## Licence
