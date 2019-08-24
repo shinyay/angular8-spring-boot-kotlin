@@ -20,6 +20,10 @@ $ cd backend-app
 $ ./gradlew clean bootRun
 ```
 
+### 3. Frontend Application
+'''
+$ docker run --rm -it --name my-frontend -v (pwd)/frontend-app:/app -p 4200:4200 shinyay/angular-cli ng serve --host 0.0.0.0 --poll=2000
+'''
 
 ## Features
 
