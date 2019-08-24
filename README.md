@@ -8,6 +8,12 @@ App to App on PCF
 
 ## Demo
 
+### 1. Run Backend MySQL
+```
+$ cd backend-app/db/docker-mysql
+$ docker-compose up -d
+```
+
 ## Features
 
 ### Tags
