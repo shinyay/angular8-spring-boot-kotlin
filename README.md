@@ -13,6 +13,7 @@ App to App on PCF
 - [for-local-with-register-and-delete](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/for-local-with-register-and-delete)
 - [angular-login-authentication](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/angular-login-authentication)
   - Simple Authentication with hardcoded id/pwd in Angular code
+- [spring-security-with-each-authentication](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/spring-security-with-each-authentication)
 
 ## Demo
 
