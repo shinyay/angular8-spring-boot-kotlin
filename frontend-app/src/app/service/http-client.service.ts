@@ -22,26 +22,14 @@ export class HttpClientService {
   }
 
   public getEmployees() {
-    let username='angular'
-    let password='springboot'
-
-    const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa(username + ':' + password) });
-    return this.httpClient.get<Employee[]>(environment.apiUrl, {headers});
+    return this.httpClient.get<Employee[]>(environment.apiUrl);
   }
 
   public deleteEmployee(employee) {
-    let username='angular'
-    let password='springboot'
-
-    const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa(username + ':' + password)});
-    return this.httpClient.delete<Employee>(environment.apiUrl + '/' + employee.id, {headers});
+    return this.httpClient.delete<Employee>(environment.apiUrl + '/' + employee.id);
   }
 
   public createEmployee(employee) {
-    let username='angular'
-    let password='springboot'
-
-    const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa(username + ':' + password)});
-    return this.httpClient.post<Employee>(environment.apiUrl, employee, {headers});
+    return this.httpClient.post<Employee>(environment.apiUrl, employee);
   }
 }
