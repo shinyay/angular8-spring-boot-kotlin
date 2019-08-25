@@ -133,6 +133,16 @@ or
 $ ng generate service service/authGuard
 ```
 
+#### Basic Authentication Http Interceptor Service
+```
+$ ./angular-cli.fish --directory frontend-app ng generate service service/BasicAuthHtppInterceptorService
+```
+or
+```
+$ ng generate service service/BasicAuthHtppInterceptorService
+```
+
+
 ## Installation
 
 ## Licence
