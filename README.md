@@ -1,4 +1,4 @@
-# Angular 8 Frontend for SpringBoot Backedn
+# Angular 8 Frontend for SpringBoot Backend
 
 App to App on PCF
 
