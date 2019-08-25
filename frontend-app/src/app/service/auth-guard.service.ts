@@ -7,5 +7,16 @@ import { AuthenticationService } from './authentication.service';
 })
 export class AuthGuardService {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private authService: AuthenticationService
+  ) { }
+
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+    if (this.authService.isUserLoggedIn()) {
+      return true
+    }
+    this.router.navigate(['login']);
+    return false;
+  }
 }
