@@ -6,6 +6,14 @@ App to App on PCF
 
 - [shinyay/angular-cli](https://cloud.docker.com/repository/docker/shinyay/angular-cli)
 
+### Tags
+- [for-local-without-css](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/for-local-without-css)
+- [for-pws-without-css](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/for-pws-without-css)
+- [for-pws-with-css](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/for-pws-with-css)
+- [for-local-with-register-and-delete](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/for-local-with-register-and-delete)
+- [angular-login-authentication](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/angular-login-authentication)
+  - Simple Authentication with hardcoded id/pwd in Angular code
+
 ## Demo
 
 ### 1. Run Backend MySQL
