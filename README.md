@@ -14,6 +14,7 @@ App to App on PCF
 - [angular-login-authentication](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/angular-login-authentication)
   - Simple Authentication with hardcoded id/pwd in Angular code
 - [spring-security-with-each-authentication](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/spring-security-with-each-authentication)
+- [spring-security-with-authentication-interceptor](https://github.com/shinyay/angular8-spring-boot-kotlin/tree/spring-security-with-authentication-interceptor)
 
 ## Demo
 
