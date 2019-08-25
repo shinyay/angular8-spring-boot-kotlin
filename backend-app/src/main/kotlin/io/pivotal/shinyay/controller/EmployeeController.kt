@@ -1,6 +1,7 @@
 package io.pivotal.shinyay.controller
 
 import io.pivotal.shinyay.entity.Employee
+import io.pivotal.shinyay.entity.User
 import io.pivotal.shinyay.repository.EmployeeRepository
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
@@ -9,6 +10,9 @@ import org.springframework.web.bind.annotation.*
 @CrossOrigin(origins = ["*"], allowedHeaders = ["*"])
 @RequestMapping(value = ["/employees", "/"])
 class EmployeeController(val employeeRepository: EmployeeRepository) {
+
+    @GetMapping("/validate")
+    fun validateLogin(): User = User("Successfully Authenticated")
 
     @GetMapping(produces = arrayOf(MediaType.APPLICATION_JSON_VALUE))
     fun employees(): MutableIterable<Employee> = employeeRepository.findAll()
