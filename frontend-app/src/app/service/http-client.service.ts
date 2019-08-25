@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 import { environment } from '../../environments/environment'
 
 export class Employee {
@@ -22,14 +22,23 @@ export class HttpClientService {
   }
 
   public getEmployees() {
+    let username='angular'
+    let password='springboot'
+
     return this.httpClient.get<Employee[]>(environment.apiUrl);
   }
 
   public deleteEmployee(employee) {
+    let username='angular'
+    let password='springboot'
+
     return this.httpClient.delete<Employee>(environment.apiUrl + '/' + employee.id);
   }
 
   public createEmployee(employee) {
+    let username='angular'
+    let password='springboot'
+
     return this.httpClient.post<Employee>(environment.apiUrl, employee);
   }
 }
