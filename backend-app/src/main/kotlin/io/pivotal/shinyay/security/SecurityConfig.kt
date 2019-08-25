@@ -28,7 +28,7 @@ class SecurityConfig : WebSecurityConfigurerAdapter() {
                 ?.inMemoryAuthentication()
                 ?.withUser("angular")
                 // NoOpPasswordEncoder
-                ?.password("{noop}password")
+                ?.password("{noop}springboot")
                 ?.roles("USER")
     }
 }
