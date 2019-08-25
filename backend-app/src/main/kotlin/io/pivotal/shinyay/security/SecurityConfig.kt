@@ -24,6 +24,11 @@ class SecurityConfig : WebSecurityConfigurerAdapter() {
 
     @Autowired
     override fun configure(auth: AuthenticationManagerBuilder?) {
-        super.configure(auth)
+        auth
+                ?.inMemoryAuthentication()
+                ?.withUser("angular")
+                // NoOpPasswordEncoder
+                ?.password("{noop}password")
+                ?.roles("USER")
     }
 }
