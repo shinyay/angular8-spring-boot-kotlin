@@ -33,7 +33,8 @@ export class HttpClientService {
     let username='angular'
     let password='springboot'
 
-    return this.httpClient.delete<Employee>(environment.apiUrl + '/' + employee.id);
+    const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa(username + ':' + password)});
+    return this.httpClient.delete<Employee>(environment.apiUrl + '/' + employee.id, {headers});
   }
 
   public createEmployee(employee) {
