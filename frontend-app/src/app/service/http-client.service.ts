@@ -41,6 +41,7 @@ export class HttpClientService {
     let username='angular'
     let password='springboot'
 
-    return this.httpClient.post<Employee>(environment.apiUrl, employee);
+    const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa(username + ':' + password)});
+    return this.httpClient.post<Employee>(environment.apiUrl, employee, {headers});
   }
 }
