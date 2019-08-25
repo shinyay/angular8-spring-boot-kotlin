@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClient, HttpHandler, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../environments/environment'
 
 export class Employee {
@@ -25,7 +25,8 @@ export class HttpClientService {
     let username='angular'
     let password='springboot'
 
-    return this.httpClient.get<Employee[]>(environment.apiUrl);
+    const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa(username + ':' + password) });
+    return this.httpClient.get<Employee[]>(environment.apiUrl, {headers});
   }
 
   public deleteEmployee(employee) {
